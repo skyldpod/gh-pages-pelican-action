@@ -16,7 +16,7 @@ RUN apt-get update \
     && apt-get install --no-install-recommends -qy git curl bash
 
 
-RUN curl -sL https://deb.nodesource.com/setup_12.x | bash -
+RUN curl -sL https://deb.nodesource.com/setup_18.x | bash -
 RUN apt-get install -y nodejs
 
 COPY entrypoint.sh /entrypoint.sh
